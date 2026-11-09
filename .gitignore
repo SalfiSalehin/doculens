@@ -1,0 +1,41 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+build/
+dist/
+
+# Data, weights, runtime files (never commit)
+ml/data/
+ml/models/
+ml/checkpoints/
+var/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.onnx
+
+# Saved run outputs are committed, but big artefacts are not
+ml/runs/**/*.npy
+ml/runs/**/predictions_raw/
+
+# Frontend
+node_modules/
+frontend/dist/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
